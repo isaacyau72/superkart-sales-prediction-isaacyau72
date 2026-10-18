@@ -8,12 +8,12 @@ BACKEND_URL = os.getenv(
     "BACKEND_URL",
     "http://172.18.0.1:7860"
 )
+
 # Page title
 st.title("SuperKart System")
 st.write(
     "Enter the product and store details below to predict the total sales."
 )
-
 # Input fields for product and store data
 Product_Weight = st.number_input("Product Weight", min_value=0.0, value=12.66)
 Product_Sugar_Content = st.selectbox("Product Sugar Content", ["Low Sugar", "Regular", "No Sugar"])
