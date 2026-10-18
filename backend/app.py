@@ -11,14 +11,14 @@ superkart_api = Flask("SuperKart")
 # Load the trained model
 
 
-#   model = joblib.load("superkart_model.joblib").....................................................IT WAS REPLACE FOR ***model = joblib.load("backend_files/xgb_tuned.joblib")**
+#   model = joblib.load("superkart_model.joblib").....................................................IT WAS REPLACE FOR ***model = joblib.load("xgb_tuned.joblib")**
 
 
 #   Your saved model was backend_files/xgb_tuned.joblib, so you should correct that line before running the app. Otherwise, the app may fail when it tries to load the model.
 
 
 
-model = joblib.load("backend_files/xgb_tuned.joblib")
+model = joblib.load("xgb_tuned.joblib")
 
 # Define a route for the home page
 @superkart_api.get('/')
